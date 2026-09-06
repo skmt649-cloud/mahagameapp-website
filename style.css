@@ -54,7 +54,6 @@ body {
     z-index: 1000;
     border-bottom: 1px solid var(--border-color);
     width: 100%;
-    overflow: hidden;
 }
 
 .nav-wrapper {
@@ -98,7 +97,7 @@ body {
     color: var(--primary-gold);
 }
 
-/* Header Right Actions (Download App Button + Hamburger Menu) */
+/* Header Right Actions */
 .header-action {
     display: flex;
     align-items: center;
@@ -132,7 +131,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 45px;
-    min-width: 0; /* Prevents flex children from overflowing */
+    min-width: 0;
 }
 
 /* --- Standard Buttons --- */
@@ -152,7 +151,6 @@ body {
     white-space: normal;
 }
 
-/* Header & Card Download Button */
 .btn-primary {
     background: linear-gradient(135deg, #ffb703, #fb8500);
     color: #000;
@@ -167,7 +165,6 @@ body {
     background: linear-gradient(135deg, #ffd166, #ff9f1c);
 }
 
-/* Big Hero Download Button (Contained Animation) */
 .btn-download-gold {
     background: #0f172a;
     color: #fff;
@@ -176,7 +173,7 @@ body {
     border-radius: 50px;
     position: relative;
     z-index: 1;
-    overflow: hidden; /* Clips gradient overflow */
+    overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
@@ -506,7 +503,6 @@ body {
     color: #94a3b8;
 }
 
-/* Floating Animations */
 .float-anim {
     animation: floatingUpDown 3.5s ease-in-out infinite;
 }
@@ -682,7 +678,7 @@ body {
 
 .games-category-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 18px;
 }
 
@@ -1140,7 +1136,6 @@ body {
         gap: 8px;
     }
 
-    /* Fixed Header Download Button styling for Mobile */
     .header-action .btn-sm {
         padding: 6px 12px;
         font-size: 0.75rem;
@@ -1163,6 +1158,7 @@ body {
         padding: 20px;
         border-bottom: 1px solid var(--border-color);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+        z-index: 9999;
     }
 
     .main-nav.nav-active {
