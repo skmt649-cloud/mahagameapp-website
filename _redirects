@@ -1,3 +1,7 @@
-/mahagameapp-contact-us/*  /  301!
-/mahagameapp-blog/*        /  301!
-/mahagameapp-disclaimer/*  /  301!
+/category/*                /  301
+/home                      /  301
+/home/                     /  301
+/wp-*                      /  301
+/mahagameapp-contact-us/*  /  301
+/mahagameapp-blog/*        /  301
+/mahagameapp-disclaimer/*  /  301
